@@ -5,21 +5,21 @@
 class Kb < Formula
   desc "CLI for building topic-based knowledge bases in the Karpathy KB pattern"
   homepage "https://github.com/compozy/kb"
-  version "0.0.7"
+  version "0.0.8"
   license "BSL-1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/compozy/kb/releases/download/v0.0.7/kb_0.0.7_darwin_x86_64.tar.gz"
-      sha256 "e6ab0dd5263ffcf838a3407be967fe9c2b72b6508982efdc86196363c77503f6"
+      url "https://github.com/compozy/kb/releases/download/v0.0.8/kb_0.0.8_darwin_x86_64.tar.gz"
+      sha256 "99289ce7693a1db1ecab1fabbe7b00df448ee96b53fb77768031dd1650dff4e0"
 
       define_method(:install) do
         bin.install "kb"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/compozy/kb/releases/download/v0.0.7/kb_0.0.7_darwin_arm64.tar.gz"
-      sha256 "748830dc5dcdcab0cd2572c1263521545e3c015cf38e885e54c89162522ec971"
+      url "https://github.com/compozy/kb/releases/download/v0.0.8/kb_0.0.8_darwin_arm64.tar.gz"
+      sha256 "3595419880649ab7468f133cb09f958367a7678722b1841413e392697abad27c"
 
       define_method(:install) do
         bin.install "kb"
@@ -29,15 +29,15 @@ class Kb < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/compozy/kb/releases/download/v0.0.7/kb_0.0.7_linux_x86_64.tar.gz"
-      sha256 "1f501628cd5513fe196c922d72913027cac70707f02540f4b43880ae4d7dad9f"
+      url "https://github.com/compozy/kb/releases/download/v0.0.8/kb_0.0.8_linux_x86_64.tar.gz"
+      sha256 "6170bd8281fd3dec5c2e4108955eb8242dd9d35c111291cfacbe1a469f89b0ad"
       define_method(:install) do
         bin.install "kb"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/compozy/kb/releases/download/v0.0.7/kb_0.0.7_linux_arm64.tar.gz"
-      sha256 "2a9ec50aac4a1f182fbc53e917f9f0c0bb4827ed97dc86dc48930983763156f9"
+      url "https://github.com/compozy/kb/releases/download/v0.0.8/kb_0.0.8_linux_arm64.tar.gz"
+      sha256 "3bf7ff473cd11cb68b99681cc0328c57476c5cdc017eac4ffa0f383d0c0c5ac2"
       define_method(:install) do
         bin.install "kb"
       end
