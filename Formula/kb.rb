@@ -5,21 +5,21 @@
 class Kb < Formula
   desc "CLI for building topic-based knowledge bases in the Karpathy KB pattern"
   homepage "https://github.com/compozy/kb"
-  version "0.0.9"
+  version "0.0.10"
   license "BSL-1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/compozy/kb/releases/download/v0.0.9/kb_0.0.9_darwin_x86_64.tar.gz"
-      sha256 "228ad88469181d9cff535b94c50be757cb052625a789f62351b2fae762a5c887"
+      url "https://github.com/compozy/kb/releases/download/v0.0.10/kb_0.0.10_darwin_x86_64.tar.gz"
+      sha256 "9a1e1a04276e51ad44b035d1f1521b71e8d730a281ed69c89136b348f7dd2e73"
 
       define_method(:install) do
         bin.install "kb"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/compozy/kb/releases/download/v0.0.9/kb_0.0.9_darwin_arm64.tar.gz"
-      sha256 "b5f802891712e19685d436c811db7a929da4fc995bc73120ddd2233b58a3dd79"
+      url "https://github.com/compozy/kb/releases/download/v0.0.10/kb_0.0.10_darwin_arm64.tar.gz"
+      sha256 "0d3a5e592c64a70ca24d3a6fc4862d807900ddb0675782af0c6db616ce3331db"
 
       define_method(:install) do
         bin.install "kb"
@@ -29,15 +29,15 @@ class Kb < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/compozy/kb/releases/download/v0.0.9/kb_0.0.9_linux_x86_64.tar.gz"
-      sha256 "9a87b383c8c2c286ff584c265d3229ab4696713c08cb73c7b60e02dcf54ce25e"
+      url "https://github.com/compozy/kb/releases/download/v0.0.10/kb_0.0.10_linux_x86_64.tar.gz"
+      sha256 "f0819929e80765a95c60f9825d853b154a0fe016067f2acd71dce72de82f193e"
       define_method(:install) do
         bin.install "kb"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/compozy/kb/releases/download/v0.0.9/kb_0.0.9_linux_arm64.tar.gz"
-      sha256 "ffb9a2fc49da2172b95d8c4baa4edd6cdfe7d9225856cd88dd08167af2b3d9ab"
+      url "https://github.com/compozy/kb/releases/download/v0.0.10/kb_0.0.10_linux_arm64.tar.gz"
+      sha256 "fba3d750d3aa8696a577d236f04cd09adc452c93423f5b13554f9db88872a565"
       define_method(:install) do
         bin.install "kb"
       end
